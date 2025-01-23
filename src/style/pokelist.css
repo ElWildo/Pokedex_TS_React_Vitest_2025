@@ -1,0 +1,33 @@
+.poke-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #BFF9FF;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.poke-list::-moz-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.endList {
+    width: 100%;
+    /* Force the end of the list to be always ona new row */
+}
